@@ -38,3 +38,13 @@
 *.db-wal
 *.ipch
 *.user
+*.idb
+*.log
+*.pdb
+*.tlog
+*.lastbuildstate
+*.res
+*.exp
+*.ilk
+*.iobj
+*.ipdb
