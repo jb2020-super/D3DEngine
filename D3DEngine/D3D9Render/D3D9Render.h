@@ -11,9 +11,11 @@ namespace sjb {
 		D3D9Render();
 		~D3D9Render();
 		HRESULT Init(HWND hwnd);
+		HRESULT Render();
 	private:
 		int _check_HW_vertex_processing();
 		void _fill_default_params(D3DPRESENT_PARAMETERS &params);
+		void _set_object_pos(const Vec3& pos);
 	private:
 		CComPtr<IDirect3D9> m_d3d9;
 		CComPtr<IDirect3DDevice9> m_d3d9Device;

@@ -36,6 +36,13 @@ namespace sjb {
 		return hr;
 	}
 
+	HRESULT D3D9Render::Render()
+	{
+		D3DMATRIX world_mx;
+		m_d3d9Device->SetTransform(D3DTS_WORLD, &world_mx);
+		return E_NOTIMPL;
+	}
+
 	int D3D9Render::_check_HW_vertex_processing()
 	{
 		int vp = D3DCREATE_SOFTWARE_VERTEXPROCESSING;
@@ -68,6 +75,10 @@ namespace sjb {
 		params.Flags = 0;
 		params.FullScreen_RefreshRateInHz = 0;
 		params.PresentationInterval = D3DPRESENT_INTERVAL_IMMEDIATE;
+
+	}
+	void D3D9Render::_set_object_pos(const Vec3 & pos)
+	{
 
 	}
 }

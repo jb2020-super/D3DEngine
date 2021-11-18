@@ -6,3 +6,4 @@
 #include <atlbase.h>
 
 #include "common.h"
+#include "math.h"
